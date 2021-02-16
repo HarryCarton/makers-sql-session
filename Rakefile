@@ -1,5 +1,6 @@
 require 'pg'
 
+
 task :setup do
   connection = PG.connect
   connection.exec('CREATE DATABASE country_data;')
